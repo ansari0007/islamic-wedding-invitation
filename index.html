@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101e1b" />
+  <meta name="description" content="A Three.js wedding invitation for Najmuddin and Neha Ansari, 17–18 January 2027 in Bijnor." />
+  <title>Najmuddin &amp; Neha · A Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=DM+Sans:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="scene" aria-label="An interactive 3D crescent moon and Islamic geometric wedding invitation"></canvas>
+  <div class="vignette"></div>
+  <div class="spark-cursor" id="sparkCursor" aria-hidden="true"><span class="cursor-star">✦</span><span class="cursor-orbit">✧</span></div>
+  <div class="card-gate" id="cardGate">
+    <button class="invitation-card" id="openCard" type="button" aria-label="Open Najmuddin and Neha's wedding invitation">
+      <span class="card-shadow"></span>
+      <span class="card-base">
+        <span class="card-border"></span>
+        <span class="card-motif">۞</span>
+        <span class="card-bismillah" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>
+        <span class="card-tap"><span>✦</span> <span class="hand-icon" aria-hidden="true">👆</span> <span id="cardTapText">TOUCH TO OPEN</span> <span>✦</span></span>
+        <span class="card-title" id="cardTitle">A wedding<br><em>invitation</em></span>
+        <span class="card-couple">Najmuddin <i>&amp;</i> Neha</span>
+        <span class="card-date" id="cardDate">17 — 18 JANUARY 2027</span>
+      </span>
+      <span class="card-flap">
+        <span class="flap-border"></span>
+        <span class="flap-medallion">☾</span>
+      </span>
+    </button>
+    <label class="gate-language" for="gateLanguage"><span id="gateLanguageLabel">READ IN</span><select class="language-select" id="gateLanguage"><option value="en">English</option><option value="hi">हिन्दी</option><option value="ur">اردو</option></select></label>
+    <p class="gate-caption" id="gateCaption">A little something made with love &amp; duas</p>
+  </div>
+  <header class="topbar"><a class="monogram" href="#top" aria-label="Back to top"><span>✦</span> N <i>&amp;</i> N</a><div class="topbar-actions"><label class="language-control"><span class="sr-only" id="languageLabel">Invitation language</span><select class="language-select" id="pageLanguage" aria-labelledby="languageLabel"><option value="en">English</option><option value="hi">हिन्दी</option><option value="ur">اردو</option></select></label><button id="music" class="music"><span id="musicIcon">♪</span><span id="musicLabel">Play the naat</span></button></div></header>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="bismillah" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+        <p class="overline" id="heroOverline">WITH THE BLESSINGS OF ALLAH &amp; OUR FAMILIES</p>
+        <h1>Najmuddin <span>&amp;</span><br><em>Neha Ansari</em></h1>
+        <div class="ornament"><span>✧</span></div>
+        <p class="invite-text" id="heroInvite">request the pleasure of your company<br>at their wedding celebrations</p>
+        <a class="scroll-cta" id="scrollCta" href="#events">Discover the invitation <span>↓</span></a>
+      </div>
+      <div class="hero-hint"><span class="hint-dot"></span> <span id="dragHint">DRAG TO EXPLORE</span></div>
+      <div class="coordinates"><span id="heroLocation">BIJNOR · INDIA</span><span id="heroDates">17 — 18 JANUARY 2027</span></div>
+    </section>
+    <section class="verse section" id="verse">
+      <div class="section-label" id="verseLabel">A verse for the beginning</div>
+      <div class="verse-panel"><span class="rosette">۞</span><p class="arabic" lang="ar" dir="rtl">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً</p><p class="translation" id="verseTranslation">“And among His signs is that He created for you spouses from among yourselves so that you may find tranquility in them; and He placed between you affection and mercy.”</p><span class="source" id="verseSource">QUR’AN · AR-RUM 30:21</span></div>
+    </section>
+    <section class="events section" id="events"><div class="section-label" id="eventsLabel">Save these dates</div><h2 id="eventsHeading">Two days, one<br><em>beautiful beginning</em></h2><div class="countdown"><div><strong id="days">—</strong><small id="daysLabel">DAYS</small></div><b>:</b><div><strong id="hours">—</strong><small id="hoursLabel">HOURS</small></div><b>:</b><div><strong id="minutes">—</strong><small id="minutesLabel">MINUTES</small></div><b>:</b><div><strong id="seconds">—</strong><small id="secondsLabel">SECONDS</small></div></div>
+      <div class="event-grid"><article class="event"><span class="event-symbol">☾</span><p class="event-type" id="nikahType">THE NIKAH</p><h3 id="nikahTitle">A sacred promise</h3><div class="date">17 <small id="nikahMonth">JAN</small> 2027</div><p class="time" id="nikahTime">Sunday · 12:00 noon</p><div class="separator"></div><p class="venue">Paris Garden<br><small id="nikahPlace">Bijnor, Uttar Pradesh</small></p></article><article class="event"><span class="event-symbol">✦</span><p class="event-type" id="walimaType">THE WALIMA</p><h3 id="walimaTitle">A joyful gathering</h3><div class="date">18 <small id="walimaMonth">JAN</small> 2027</div><p class="time" id="walimaTime">Monday · 12:00 noon</p><div class="separator"></div><p class="venue">Paris Garden<br><small id="walimaPlace">Bijnor, Uttar Pradesh</small></p></article></div>
+      <a class="calendar-link" id="calendarLink" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Najmuddin%20%26%20Neha%20Ansari%20Nikah&dates=20270117T063000Z/20270117T083000Z&details=Nikah%20at%20Paris%20Garden%2C%20Bijnor&location=Paris%20Garden%2C%20Bijnor" target="_blank" rel="noopener">ADD NIKAH TO GOOGLE CALENDAR <span>↗</span></a>
+    </section>
+    <section class="blessing section"><div class="section-label" id="duaLabel">A prayer for the newlyweds</div><p class="arabic blessing-ar" lang="ar" dir="rtl">بَارَكَ اللَّهُ لَكَ، وَبَارَكَ عَلَيْكَ، وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</p><p class="transliteration">Bārakallāhu laka, wa bāraka ʿalayka, wa jamaʿa baynakumā fī khayr.</p><p class="translation" id="duaTranslation">May Allah bless you, shower His blessings upon you, and bring you together in goodness.</p><span class="source" id="duaSource">DUA FOR THE NEWLYWED · JĀMIʿ AT-TIRMIDHI 1091</span></section>
+    <section class="location section" id="location"><div class="section-label" id="locationLabel">We can’t wait to see you</div><h2 id="locationHeading">Find your way<br><em>to the celebration</em></h2><div class="location-card"><div class="location-info"><span class="pin">⌖</span><h3>Paris Garden</h3><p id="address">Bijnor, Uttar Pradesh<br>India</p><hr><p class="both-days" id="bothDays">✦ &nbsp;Both events will be held here</p><a class="directions" id="directions" href="https://www.google.com/maps/search/?api=1&query=Paris+Garden+Bijnor" target="_blank" rel="noopener">OPEN DIRECTIONS <span>↗</span></a></div><div class="map"><iframe title="Map to Paris Garden in Bijnor" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9979.88779750328!2d78.1148506979478!3d29.35373413345044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390bef0063c1c96b%3A0xf0ce579d841fb7b!2sParis%20garden!5e1!3m2!1sen!2sus!4v1791641122119!5m2!1sen!2sus" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><span class="map-label" id="mapLabel">PARIS GARDEN · BIJNOR</span></div></div></section>
+  </main>
+  <footer><span class="footer-mark">✦</span><p id="footerLine">With love, duas &amp; gratitude</p><div>Najmuddin <i>&amp;</i> Neha</div><small id="footerSmall">PLEASE JOIN US IN CELEBRATION · 2027</small></footer>
+  <audio id="naatAudio" preload="none" loop autoplay></audio>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
