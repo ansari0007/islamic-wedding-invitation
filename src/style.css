@@ -68,7 +68,7 @@
 .card-gate.is-opening .card-flap{transform:rotateX(-172deg)}
 .card-gate.is-opening .invitation-card{animation:card-open 1.35s .2s cubic-bezier(.2,.7,.2,1) both}
 .card-gate.is-opening .card-shadow{transform:scaleX(1.4);opacity:.3}
-.gate-caption{position:relative;margin:0;color:#c9c1a5;font:italic 14px 'Playfair Display';letter-spacing:.02em;animation:rise-in 1s .55s both}
+.gate-caption{position:relative;margin:0;color:#c9c1a5;font:italic 14px 'Playfair Display';letter-spacing:.02em;animation:rise-in 1s .55s both;margin-top:15px;}
 .card-gate.is-opening .gate-caption{animation:gate-fade .45s both}
 @keyframes card-arrive{from{opacity:0;transform:translateY(32px) rotateY(-8deg) scale(.93)}to{opacity:1;transform:translateY(0) rotateY(0) scale(1)}}
 @keyframes card-open{0%{transform:translateY(0) scale(1)}45%{transform:translateY(-9px) scale(1.025)}100%{transform:translateY(-25px) scale(1.08);opacity:0}}
